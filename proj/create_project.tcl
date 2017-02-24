@@ -14,7 +14,7 @@ cd $dest_dir
 
 
 
-set part "xc7a35ticpg236-1"
+set part "xc7a35tcpg236-1"
 set brd_part "digilentinc.com:basys3:part0:1.1"
 
 # Set the reference directory for source file relative paths (by default the value is script directory path)
