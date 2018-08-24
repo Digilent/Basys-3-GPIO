@@ -36,7 +36,7 @@ Demo Setup
 4. Plug a Basys 3 into the computer running Vivado using a MicroUSB cable.
 5. Open a serial terminal emulator (such as TeraTerm) and connect it to the Basys 3's serial port, using a baud rate of 9600.
 6. Click "Open target" in the green bar at the top of the window. Select "Auto connect" from the drop down menu.
-7. Click "Program device" in the green bar at the top of the window. In the "Program Device" Wizard, enter "\<archive extracted location\>vivado_proj/Basys-3-GPIO.runs/impl_1/top.bit" into the "Bitstream file" field. Then click **Program**.
+7. Click "Program device" in the green bar at the top of the window. In the "Program Device" Wizard, enter "\<archive extracted location\>vivado_proj/Basys-3-GPIO.runs/impl_1/GPIO_demo.bit" into the "Bitstream file" field. Then click **Program**.
 8. The demo will now be programmed onto the Basys 3. See the *Introduction* section of this README for a description of how this demo works.
 
 Next Steps
