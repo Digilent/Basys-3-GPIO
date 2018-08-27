@@ -51,7 +51,7 @@ Next Steps
 --------------
 This demo can be used as a basis for other projects, either by adding sources included in the demo's release to those projects, or by modifying the sources in the release project.
 
-Check out the Basys 3's [Resource Center](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start?redirect=1) to find more documentation, demos, and tutorials.
+Check out the Basys 3's [Resource Center](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start) to find more documentation, demos, and tutorials.
 
 If there are any issues with running this demo, contact Digilent Support through the FPGA section of the [Digilent Forum](https://forum.digilentinc.com).
 
