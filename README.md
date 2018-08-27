@@ -1,10 +1,18 @@
 Basys 3 General Input/Output Demo
 ==============
 
-Introduction
+Description
 --------------
-This project is a VHDL demo using the Basys 3, switches, LEDs, pushbuttons, seven-segment display, VGA connector, USB HID Host port and USB UART bridge. When programmed onto the board, all sixteen of the user switches are tied to their corresponding LED. Every time a switch is toggled, the LED directly above it will toggle with it. The seven segment display counts up from 0 to 9 as long as no buttons are pressed. When BTNU is pressed, the first digit on the seven segment display is turned off. In the same manner, BTNL turns off the second digit, BTNR turns off the third, and BTND turns off the fourth. BTNC turns off the entire display and resets the counter. A computer monitor attached to the Basys 3 with a VGA cable displays a series of moving patterns. If a mouse is attached to the USB port, a cursor is displayed on the screen. For the USB UART, whenever the reset button or BTNC is pressed, the Basys3 will send the line “BASYS3 GPIO/UART DEMO!” to a connected serial terminal emulator. Whenever one of the D-pad buttons other than BTNC is pressed, the terminal emulator will print the line “Button press detected!”. For photos of this demo in operation, check out it’s page on the [Digilent Wiki](https://reference.digilentinc.com/learn/programmable-logic/tutorials/basys-3-general-io/start).
+This project is a Vivado demo using the Basys 3's switches, LEDs, pushbuttons, seven-segment display, VGA connector, USB HID Host port and USB UART bridge, written in VHDL.
+
+When programmed onto the board, all sixteen of the switches are tied to their corresponding LEDs. Every time a switch is toggled, the LED directly above it will toggle with it.
+
+A computer monitor attached to the Basys 3 with a VGA cable displays a series of moving patterns. If a mouse is attached to the USB port when the demo starts running, a cursor is displayed on the screen and can be moved with the mouse.
+
+The seven segment display counts up from 0 to 9 as long as no buttons are pressed. As long as BTNU is pressed, the first digit on the seven segment display is turned off. In the same manner, BTNL turns off the second digit, BTNR turns off the third, and BTND turns off the fourth. BTNC turns off the entire display and resets the counter.
  
+Whenever the reset button or BTNC is pressed, the Basys 3 sends the line “BASYS3 GPIO/UART DEMO!” to a serial terminal emulator running on the computer that the Basys 3 is connected to over Micro USB. Whenever one of the D-pad buttons other than BTNC is pressed, the terminal emulator prints the line “Button press detected!”.
+
 | Button | Function                                                          |
 | ------ | ------------------------------------------------------------------|
 | BTNC   | Turns off the entire seven-segment display and resets the counter |
@@ -22,11 +30,11 @@ Requirements
 --------------
 * **Basys 3**:To purchase a Basys 3, see the [Digilent Store](https://store.digilentinc.com/basys-3-artix-7-fpga-trainer-board-recommended-for-introductory-users/)
 * **Vivado 2018.2 Installation**:To learn how to get Vivado, see the [Installing Vivado and Digilent Board Files Tutorial](https://reference.digilentinc.com/vivado/installing-vivado/start).
-* **Serial Terminal Emulator**: For more information see the [Installating and Using a Terminal Emulator Tutorial](https://reference.digilentinc.com/learn/programmable-logic/tutorials/tera-term).
+* **Serial Terminal Emulator Application**: For more information see the [Installating and Using a Terminal Emulator Tutorial](https://reference.digilentinc.com/learn/programmable-logic/tutorials/tera-term).
 * **MicroUSB Cable**
-* **Monitor with a VGA port**
-* **VGA cable**
-* **USB mouse**
+* **Monitor with a VGA Port**
+* **VGA Cable**
+* **USB Mouse**
  
 Demo Setup
 --------------
@@ -41,7 +49,11 @@ Demo Setup
 
 Next Steps
 --------------
-This demo can be used as a basis for other projects, either by adding sources included in the demo's release to those projects, or by modifying the sources in the release project. Check out the Basys 3's [Resource Center](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start?redirect=1) to find more documentation, demos, and tutorials.
+This demo can be used as a basis for other projects, either by adding sources included in the demo's release to those projects, or by modifying the sources in the release project.
+
+Check out the Basys 3's [Resource Center](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start?redirect=1) to find more documentation, demos, and tutorials.
+
+If there are any issues with running this demo, contact Digilent Support through the FPGA section of the [Digilent Forum](https://forum.digilentinc.com).
 
 Additional Notes
 --------------
